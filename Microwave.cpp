@@ -4,5 +4,5 @@ microwave::microwave(int size, int power) : LargeAppliances(size), SmallApplianc
 }
 void microwave::Show()
 {
-	cout << "Микровая печь: объём " << _size << " мощность " << _power << endl;
+	std::cout << "Микровая печь: объём " << _size << " мощность " << _power << std::endl;
 }

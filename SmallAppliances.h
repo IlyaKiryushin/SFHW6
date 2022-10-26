@@ -11,10 +11,10 @@ protected:
 class teapot final : public SmallAppliances
 {
 public:
-	teapot(int power, string material);
+	teapot(int power, const std::string& material);
 	void Show() override;
 private:
-	string _material;
+	const std::string& _material;
 };
 class VacuumCleaner final : public SmallAppliances
 {

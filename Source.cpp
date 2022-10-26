@@ -5,17 +5,17 @@ int main()
 {
 	setlocale(LC_ALL, "");
 	IElectronics* warehouse[5];
-	warehouse[0] = new fridge(290, string("red"));
-	warehouse[1] = new four(50, string("grill"));
-	warehouse[2] = new teapot(1500, string("plastic"));
+	warehouse[0] = new fridge(290, std::string("red"));
+	warehouse[1] = new four(50, std::string("grill"));
+	warehouse[2] = new teapot(1500, std::string("plastic"));
 	warehouse[3] = new VacuumCleaner(1700, 8);
 	warehouse[4] = new microwave(20, 1000);
 	bool open = true;
 	while (open)
 	{
-		cout << "Выберите товар: 1 - холодильник, 2 - духовая печь, 3 - чайник, 4 - пылесос, 5 - микроволновая печь, 0 - выход" << endl;
+		std::cout << "Выберите товар: 1 - холодильник, 2 - духовая печь, 3 - чайник, 4 - пылесос, 5 - микроволновая печь, 0 - выход" << std::endl;
 		int product;
-		cin >> product;
+		std::cin >> product;
 		switch (product)
 		{
 		case 1:
@@ -37,7 +37,7 @@ int main()
 			open = false;
 			break;
 		default:
-			cout << "Выберите товар от 1 до 5 или 0, чтобы выйти" << endl;
+			std::cout << "Выберите товар от 1 до 5 или 0, чтобы выйти" << std::endl;
 			break;
 		}
 	}

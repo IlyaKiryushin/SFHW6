@@ -11,16 +11,16 @@ protected:
 class fridge final : public LargeAppliances
 {
 public:
-	fridge(int size, string color);
+	fridge(int size, const std::string& color);
 	void Show() override;
 private:
-	string _color;
+	const std::string& _color;
 };
 class four final : public LargeAppliances
 {
 public:
-	four(int size, string option);
+	four(int size, const std::string& option);
 	void Show() override;
 private:
-	string _option;
+	const std::string& _option;
 };
